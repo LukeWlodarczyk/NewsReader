@@ -8,12 +8,12 @@
 
 ### Setup
 
-```
-npm install -g serve
+```sh
+$ npm install -g serve
 ```
 
 and
 
-```
-serve .
+```sh
+$ serve .
 ```
