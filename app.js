@@ -9,6 +9,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   sourceSelector.value = defaultSource;
 
   sourceSelector.addEventListener("change", e => updateNews(e.target.value));
+
+  if ("serviceWorker" in navigator) {
+    try {
+      navigator.serviceWorker.register("sw.js");
+      console.log("SW registered");
+    } catch (err) {
+      console.log("Registration failed");
+    }
+  }
 });
 
 async function updateNewsSources() {
