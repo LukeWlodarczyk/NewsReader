@@ -3,7 +3,7 @@
 ## Tech
 
 - ES6
-- ServiceWorkes
+- Service Workers
 - Workbox
 
 ### Setup
